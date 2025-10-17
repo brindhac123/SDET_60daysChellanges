@@ -1,0 +1,12 @@
+class Solution {
+    public boolean isLengthEven(Node head) {
+        // code here
+        int c=0;
+        Node temp=head;
+        while(temp!=null){
+            c++;
+            temp=temp.next;
+        }
+        return c%2==0;
+    }
+}
