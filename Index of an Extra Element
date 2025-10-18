@@ -1,0 +1,16 @@
+/*Complete the function below*/
+class Solution {
+    public int findExtra(int a[], int b[]) {
+        // add code here.
+        int low=0,high=b.length;
+        while(low<high){
+            int mid=low+(high-low)/2;
+            if(a[mid]==b[mid]){
+                low=mid+1;
+            }else{
+                high=high-1;
+            }
+            
+        }return low;
+    }
+}
