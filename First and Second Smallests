@@ -1,0 +1,27 @@
+
+class Solution {
+    public ArrayList<Integer> minAnd2ndMin(int[] arr) {
+        // code here
+        int f=Integer.MAX_VALUE;
+        int s=Integer.MAX_VALUE;
+        for(int i:arr){
+            if(i<f){
+                s=f;
+                f=i;
+            }
+            else if(i<s && i!=f){
+                s=i;
+            }
+        }
+        ArrayList<Integer> ans=new ArrayList<>();
+        if(s==Integer.MAX_VALUE){
+            ans.add(-1);
+        }
+        else{
+            ans.add(f);
+            ans.add(s);
+        }
+        
+        return ans;
+    }
+}
