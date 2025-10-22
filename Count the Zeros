@@ -1,0 +1,13 @@
+// User function Template for Java
+
+class Solution {
+    int countZeroes(int[] arr) {
+        // code here
+        int c=0;
+        for(int n:arr){
+            if(n==0)
+            c+=1;
+        }
+        return c;
+    }
+}
