@@ -1,0 +1,19 @@
+def pos(n):
+    #out=[]
+    while(n>0):
+        #out.append(n-1)
+        print(n-1,end=" ")
+        n-=1
+    #return out
+    ## Write the code
+        
+    
+def neg(n):
+    #out=[]
+    ##Write the code
+    while(n<=0):
+        #out.append(n)
+        print(n,end=" ")
+        n+=1
+    #return out
+        
