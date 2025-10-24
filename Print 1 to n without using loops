@@ -1,0 +1,12 @@
+import java.util.*;
+
+class Solution {
+    public void insertAtIndex(ArrayList<Integer> arr, int index, int val) {
+        // code here
+       /* for(int i=index;i<=arr.size();i++){
+            add.
+        }*/
+        arr.add(index,val);
+    }
+    
+}
