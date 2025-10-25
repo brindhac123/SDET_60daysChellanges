@@ -1,0 +1,22 @@
+class Solution {
+    public char getMaxOccuringChar(String s) {
+        // code here
+        int ar[]=new int[26];
+        for(int i=0;i<s.length();i++){
+            ar[s.charAt(i)-'a']++;
+        }
+        
+        int max=ar[0];
+        for(int i=1;i<25;i++){
+            if(max<ar[i]){
+                max=ar[i];
+            }
+        }
+        for(int i=0;i<25;i++){
+            if(ar[i]==max){
+                return (char) ('a'+i);
+            }
+        }
+        return '$';
+    }
+}
