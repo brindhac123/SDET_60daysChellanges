@@ -1,0 +1,17 @@
+
+class Solution {
+    public ArrayList<Integer> sumTriangles(int mat[][]) {
+        // code here
+        int r=mat.length,u=0,l=0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<r;j++){
+                if(j>=i) u+=mat[i][j];
+                if(i>=j) l+=mat[i][j];
+            }
+        }
+        ArrayList<Integer> res=new ArrayList<>();
+        res.add(u);
+        res.add(l);
+        return res;
+    }
+}
