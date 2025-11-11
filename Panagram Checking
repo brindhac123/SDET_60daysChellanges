@@ -1,0 +1,16 @@
+class Solution {
+    public static boolean checkPangram(String s) {
+        // code here
+        s=s.toLowerCase();
+        boolean seen[]=new boolean[26];
+        for(char c:s.toCharArray()){
+            if(c>='a' && c<='z'){
+                seen[c-'a']=true;
+            }
+        }
+        for(boolean p: seen){
+            if(!p) return false;
+        }
+        return true;
+    }
+}
