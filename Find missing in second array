@@ -1,0 +1,18 @@
+// User function Template for Java
+
+class Solution {
+    ArrayList<Integer> findMissing(int[] a, int[] b) {
+        HashSet<Integer> se=new HashSet<>();
+        int l=a.length;
+        ArrayList<Integer> arr=new ArrayList<>();
+        for(int i:b){
+            se.add(i);
+        }
+        for(int i:a){
+            if(!se.contains(i)){
+                arr.add(i);
+            }
+        }
+        return arr;
+    }
+    }
