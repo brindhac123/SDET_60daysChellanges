@@ -1,0 +1,18 @@
+/*Class solution with countOddEven() as its member function
+ * arr : input array
+ */
+class Solution {
+    public static void countOddEven(Integer arr[]) {
+
+        // Your code here
+        int o=0,e=0;
+        for(int i:arr){
+            if(i%2==0)
+            e++;
+            else
+            o++;
+        }
+        System.out.println(o+" "+e);
+        
+    }
+}
