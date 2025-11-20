@@ -1,0 +1,14 @@
+// User function Template for Java
+
+class Solution {
+    int DivisibleByEight(String s) {
+        // code here
+        int n=s.length();
+        if(n<=3){
+            int num=Integer.parseInt(s);
+            return (num%8==0) ? 1:-1;
+        }
+        int num=Integer.parseInt(s.substring(n-3));
+        return (num%8==0) ? 1:-1;
+    }
+}
