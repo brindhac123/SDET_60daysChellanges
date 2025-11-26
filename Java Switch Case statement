@@ -1,0 +1,18 @@
+// User function Template for Java
+
+class Solution {
+    static double switchCase(int choice, List<Double> arr) {
+        // code here
+        double ans=0;
+        if(choice==1){
+            double r=arr.get(0);
+            ans=Math.PI*r*r;
+        }
+        else if(choice==2){
+            double l=arr.get(0);
+            double b=arr.get(1);
+            ans= l*b;
+        }
+        return ans;
+    }
+}
