@@ -1,0 +1,18 @@
+// User function Template for Java
+
+class Solution {
+    static int isStrong(int N) {
+        // code here
+        int temp=N,f_sum=0;
+        while(temp>0){
+            int rem=temp%10;
+            int sum=1;
+            for(int i=rem;i>=1;i--){
+                sum*=i;
+            }
+            f_sum+=sum;
+            temp/=10;
+        }
+        return (f_sum==N)? 1:0;
+    }
+};
