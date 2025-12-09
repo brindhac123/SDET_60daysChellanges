@@ -1,0 +1,13 @@
+import java.util.*;
+
+class GFG {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String num = sc.nextLine();
+        int n = Integer.parseInt(num); // typecast string to int
+        int result = n * 2;            // double it
+        
+        System.out.println(result);
+        // TypeCast to int double it and print
+    }
+}
