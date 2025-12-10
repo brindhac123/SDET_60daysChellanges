@@ -1,0 +1,9 @@
+// User function Template for Java
+class Solution {
+    public static int nthDay(int d, int n) {
+        // write your code here
+       int result = (d - n) % 7;
+        if (result < 0) result += 7;  // Fix negative modulo
+        return result;
+    }
+}
