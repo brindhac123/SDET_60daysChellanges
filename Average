@@ -1,0 +1,13 @@
+class Solution {
+    public static double posAverage(int[] arr) {
+        // Code here
+        int sum=0,c=0;
+        for(int i:arr){
+            if(i>=0){
+                sum+=i;
+                c+=1;
+            }
+        }
+       return (double) sum/c;
+    }
+}
