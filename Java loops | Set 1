@@ -1,0 +1,18 @@
+// User function Template for Java
+class Solution {
+    static ArrayList<Integer> getSum(int N) {
+        // code here
+        int s=0,s1=0;
+        for(int i=0;i<=N;i++){
+            if(i%2==0){
+                s+=i;
+            }else{
+                s1+=i;
+            }
+        }
+        ArrayList<Integer> a=new ArrayList<>();
+        a.add(s);
+        a.add(s1);
+       return a;
+    }
+}
