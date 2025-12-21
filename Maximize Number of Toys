@@ -1,0 +1,20 @@
+
+class Solution {
+    public static int max_toys(int arr[], int k) {
+        // Your code here
+        Arrays.sort(arr);   // Step 1: sort prices
+        
+        int count = 0;
+        
+        for (int price : arr) {
+            if (k >= price) {
+                k -= price;
+                count++;
+            } else {
+                break;
+            }
+        }
+        
+        return count;
+    }
+}
