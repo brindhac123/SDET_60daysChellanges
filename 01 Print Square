@@ -1,0 +1,34 @@
+// User function Template for Java
+class Solution {
+    public static void square(int s) {
+       if (s == 1) {
+            System.out.println("*");
+            return;
+        }
+
+        // First row
+        for (int i = 0; i < s; i++) {
+            System.out.print("*");
+            if (i < s - 1) System.out.print(" ");
+        }
+        System.out.println();
+
+        // Middle rows
+        for (int i = 0; i < s - 2; i++) {
+            System.out.print("*");
+            for (int j = 0; j < s - 2; j++) {
+                System.out.print("  ");
+            }
+            System.out.println(" *");
+        }
+
+        // Last row
+        for (int i = 0; i < s; i++) {
+            System.out.print("*");
+            if (i < s - 1) System.out.print(" ");
+        }
+
+        // 🔑 VERY IMPORTANT for multiple test cases
+        System.out.println();
+    }
+}
