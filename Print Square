@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Solution {
+    public static void solve() {
+        // Your Code Here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if (n == 1) {
+            System.out.println("*");
+            return;
+        }
+
+        // First row
+        for (int i = 0; i < n; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+
+        // Middle rows
+        for (int i = 0; i < n - 2; i++) {
+            System.out.print("* ");
+            for (int j = 0; j < n - 2; j++) {
+                System.out.print("  ");
+            }
+            System.out.println("*");
+        }
+
+        // Last row
+        for (int i = 0; i < n; i++) {
+            System.out.print("* ");
+        }
+    }
+}
